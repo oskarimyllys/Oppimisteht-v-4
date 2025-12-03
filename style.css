@@ -1,4 +1,3 @@
-/* Pohjoismaat - Custom Styles */
 
 body {
     min-height: 100vh;
@@ -10,7 +9,6 @@ main {
     flex: 1;
 }
 
-/* Country cards */
 .country-card {
     height: 100%;
 }
@@ -21,12 +19,10 @@ main {
     border-bottom: 1px solid #dee2e6;
 }
 
-/* Footer */
 footer {
     margin-top: auto;
 }
 
-/* Error message */
 .error-message {
     color: #dc3545;
 }
