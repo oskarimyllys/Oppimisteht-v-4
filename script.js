@@ -28,7 +28,6 @@ async function fetchCountries() {
 
         const countries = await response.json();
         
-        // Näytä maat
         displayCountries(countries);
 
     } catch (error) {
@@ -41,7 +40,6 @@ async function fetchCountries() {
     }
 }
 
-// Näytä maat korteissa
 function displayCountries(countries) {
     const container = document.getElementById('countries-container');
 
@@ -51,7 +49,6 @@ function displayCountries(countries) {
     });
 }
 
-// Luo maakortti
 function createCountryCard(country) {
     const name = country.name.common;
     const finnishName = countryNames[name] || name;
@@ -61,7 +58,6 @@ function createCountryCard(country) {
     const flag = country.flags.png;
     const flagAlt = country.flags.alt || `${finnishName}n lippu`;
     
-    // Hae valuutan nimi
     const currencyKey = Object.keys(country.currencies)[0];
     const currency = country.currencies[currencyKey].name;
 
